@@ -1,0 +1,24 @@
+[submodule "methods/cne"]
+	path = methods/cne
+	url = https://github.com/heitere/CNE-gravis.git
+[submodule "methods/deepwalk"]
+	path = methods/deepwalk
+	url = https://github.com/phanein/deepwalk.git
+[submodule "methods/gae"]
+	path = methods/gae
+	url = https://github.com/tkipf/gae.git
+[submodule "methods/arope"]
+	path = methods/arope
+	url = https://github.com/ZW-ZHANG/AROPE.git
+[submodule "methods/drgraph"]
+	path = methods/drgraph
+	url = https://github.com/ZJUVAI/DRGraph.git
+[submodule "methods/frrtx"]
+	path = methods/frrtx
+	url = https://github.com/owl-project/owl-graph-drawing.git
+[submodule "tools/evalne"]
+	path = tools/evalne
+	url = https://github.com/Dru-Mara/EvalNE.git
+[submodule "tools/glam"]
+	path = tools/glam
+	url = https://github.com/kwonoh/glam.git

@@ -1,0 +1,5 @@
+# python 2.7!
+numpy >= 1.14.2
+scipy >= 1.0.0
+pandas >= 0.22.0
+networkx

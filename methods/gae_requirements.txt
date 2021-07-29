@@ -1,0 +1,5 @@
+# python 2.7, TensorFlow must be >= 1.0 but also <= 2.0 because tf.app does no longer exist in newer versions
+Tensorflow==1.15
+networkx
+scikit-learn
+scipy
