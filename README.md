@@ -20,8 +20,25 @@ Evaluation tools:
 - [EvalNE][7]
 - [GLAM][8]
 
+## Docker Image ##
+
+We provide a [Docker image][9] to easily run the evaluation without the need to install all methods and tools. If you decide to install everyting by yourself follow the instructions of the next section. 
+
+First, ensure that the correct drivers and the NVIDIA container runtime (described [here][10]) are installed. To start an evaluation, pull the docker image and expose the GPUs when starting the container.
+
+```bash
+docker pull heitere/graph-vis-eval
+docker run -it --rm --gpus all heitere/graph-vis-eval:1.0
+```
+
+This will start a bash with a virtual python environment ('gravis_venv') already activated. To run the experiments stated in config.py simply type `python main.py` or `python evalne.py` to use evalne_config.py. The results are automatically stored in /gravis/output. To easily access the results from outside the container you can mount a folder e.g. `~/path/to/results` into the container:
+```bash
+docker run -v ~/path/to/results:/gravis/output -it --rm --gpus all heitere/graph-vis-eval:1.0
+```
 
 ## Installation and Setup ##
+
+Follow all steps to run the full evaluation. When you only want to evaluate some of the methods you might skip the installation of the other methods. For the installation of GLAM and FR-RTX it might help to take a look at the [Dockerfile](Dockerfile). 
 
 1. Clone the repository with all submodules.
     ```bash
@@ -99,3 +116,5 @@ This sample code is licensed under the MIT License (MIT)
 [6]:    https://github.com/tkipf/gae
 [7]:    https://github.com/Dru-Mara/EvalNE
 [8]:    https://github.com/VIDILabs/glam
+[9]:    https://hub.docker.com/r/heitere/graph-vis-eval
+[10]:   https://docs.docker.com/config/containers/resource_constraints/#access-an-nvidia-gpu
