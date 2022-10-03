@@ -102,6 +102,21 @@ python evalne_main.py
 ```
 With the default settings, a new folder will be created in `/output` containing a subfolder with train/test edge splits for each dataset, the config file used, and the results in `lp_results.txt`. 
 
+If you found this evaluation useful in your work, please cite our [paper](https://ieeexplore.ieee.org/abstract/document/9790009):
+```
+@article{heiter2022evaluating,
+  title={Evaluating Representation Learning and Graph Layout Methods for Visualization},
+  author={Heiter, Edith and Kang, Bo and De Bie, Tijl and Lijffijt, Jefrey},
+  journal={IEEE Computer Graphics and Applications},
+  volume={42},
+  number={3},
+  pages={19--28},
+  year={2022},
+  publisher={IEEE}
+}
+```
+
+
 
 ## License ##
 
